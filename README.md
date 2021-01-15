@@ -1,3 +1,3 @@
 # goLocal
 
-# Development started
+Client / App repository

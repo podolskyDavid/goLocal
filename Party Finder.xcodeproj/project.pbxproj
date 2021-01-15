@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		0330220B25B1ED6000074FFC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0330220A25B1ED6000074FFC /* Event.swift */; };
 		0330221125B1EEB400074FFC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0330221025B1EEB400074FFC /* User.swift */; };
+		0330221725B1FD7A00074FFC /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0330221625B1FD7A00074FFC /* MockDataService.swift */; };
+		0330221A25B1FDA400074FFC /* UserRegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0330221925B1FDA400074FFC /* UserRegistrationService.swift */; };
+		0330221D25B1FDCB00074FFC /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0330221C25B1FDCB00074FFC /* EventService.swift */; };
+		0330222025B1FDE400074FFC /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0330221F25B1FDE400074FFC /* Database.swift */; };
+		0330222325B1FDFF00074FFC /* MockDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0330222225B1FDFF00074FFC /* MockDatabase.swift */; };
+		0330222625B1FE1300074FFC /* ServerDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0330222525B1FE1300074FFC /* ServerDatabase.swift */; };
+		0330222925B1FE2D00074FFC /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0330222825B1FE2D00074FFC /* DatabaseProtocol.swift */; };
 		0361B0E825977EE400BE3CED /* Party_FinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B0E725977EE400BE3CED /* Party_FinderApp.swift */; };
 		0361B0EA25977EE400BE3CED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B0E925977EE400BE3CED /* ContentView.swift */; };
 		0361B0EC25977EE700BE3CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0361B0EB25977EE700BE3CED /* Assets.xcassets */; };
@@ -22,6 +29,13 @@
 /* Begin PBXFileReference section */
 		0330220A25B1ED6000074FFC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		0330221025B1EEB400074FFC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0330221625B1FD7A00074FFC /* MockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
+		0330221925B1FDA400074FFC /* UserRegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationService.swift; sourceTree = "<group>"; };
+		0330221C25B1FDCB00074FFC /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		0330221F25B1FDE400074FFC /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		0330222225B1FDFF00074FFC /* MockDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDatabase.swift; sourceTree = "<group>"; };
+		0330222525B1FE1300074FFC /* ServerDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDatabase.swift; sourceTree = "<group>"; };
+		0330222825B1FE2D00074FFC /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
 		0361B0E425977EE400BE3CED /* Party Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0361B0E725977EE400BE3CED /* Party_FinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party_FinderApp.swift; sourceTree = "<group>"; };
 		0361B0E925977EE400BE3CED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +68,28 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0330221425B1FCD700074FFC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0330221525B1FD4E00074FFC /* Database */,
+				0330221625B1FD7A00074FFC /* MockDataService.swift */,
+				0330221925B1FDA400074FFC /* UserRegistrationService.swift */,
+				0330221C25B1FDCB00074FFC /* EventService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0330221525B1FD4E00074FFC /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				0330221F25B1FDE400074FFC /* Database.swift */,
+				0330222225B1FDFF00074FFC /* MockDatabase.swift */,
+				0330222525B1FE1300074FFC /* ServerDatabase.swift */,
+				0330222825B1FE2D00074FFC /* DatabaseProtocol.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		0361B0DB25977EE400BE3CED = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +109,7 @@
 		0361B0E625977EE400BE3CED /* Party Finder */ = {
 			isa = PBXGroup;
 			children = (
+				0330221425B1FCD700074FFC /* Services */,
 				0330220925B1ECFF00074FFC /* Views */,
 				0361B0F7259783C600BE3CED /* DataModel */,
 				0361B0E725977EE400BE3CED /* Party_FinderApp.swift */,
@@ -198,12 +235,19 @@
 			files = (
 				0330220B25B1ED6000074FFC /* Event.swift in Sources */,
 				0361B0EA25977EE400BE3CED /* ContentView.swift in Sources */,
+				0330221725B1FD7A00074FFC /* MockDataService.swift in Sources */,
 				0361B0FB2597AA8200BE3CED /* EventMapView.swift in Sources */,
 				0361B0E825977EE400BE3CED /* Party_FinderApp.swift in Sources */,
+				0330222625B1FE1300074FFC /* ServerDatabase.swift in Sources */,
+				0330221A25B1FDA400074FFC /* UserRegistrationService.swift in Sources */,
+				0330222025B1FDE400074FFC /* Database.swift in Sources */,
+				0330221D25B1FDCB00074FFC /* EventService.swift in Sources */,
 				0330221125B1EEB400074FFC /* User.swift in Sources */,
 				0361B1052597AE2B00BE3CED /* EventCell.swift in Sources */,
+				0330222325B1FDFF00074FFC /* MockDatabase.swift in Sources */,
 				0361B0FF2597AAAD00BE3CED /* MainScreenView.swift in Sources */,
 				0361B1092597AE5400BE3CED /* EventsList.swift in Sources */,
+				0330222925B1FE2D00074FFC /* DatabaseProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
